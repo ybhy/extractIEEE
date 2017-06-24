@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public List<string> urlL = new List<string>();
+        public Form1()
+        {
+            InitializeComponent();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Navigate("http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=text.annotation&rowsPerPage=75&searchField=Search_All");
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            urlL.Clear();
+            
+        }
+        private void timer1_Start(object sender, EventArgs e)
+        {
+             foreach(HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+             {
+                 Console.WriteLine(ahref.InnerText);
+             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.timer1.Start();
+            foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            {
+                HtmlElement nextpage = null;
+                if (ahref.GetAttribute("className").Equals("ng-binding ng-scope"))
+                {
+                    Console.WriteLine(ahref.InnerText);
+                    Console.WriteLine(ahref.GetAttribute("href"));
+                    string url = "http://ieeexplore.ieee.org/" +¡¡ahref.GetAttribute("href");
+                    urlL.Insert(0, url);
+                    
+                }
+            }
+           // Console.Write(this.webBrowser1.DocumentText);
+        }
+		
+    }
+}

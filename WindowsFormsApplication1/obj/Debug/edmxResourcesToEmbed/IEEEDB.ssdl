@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IEEEDBtestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="IEdata">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="varchar" MaxLength="1000" />
+    <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+    <Property Name="keywords" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityContainer Name="IEEEDBtestModelStoreContainer">
+    <EntitySet Name="IEdata" EntityType="Self.IEdata" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

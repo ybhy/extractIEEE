@@ -1,0 +1,199 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+using System.Threading;
+
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public List<string> url = new List<string>();
+        public string urlhead = "http://ieeexplore.ieee.org";
+        public int index = 0;
+
+        public int sum = 432;
+        public int sumcount = 0;
+        public int indexsum = 0;
+        public int start = 0;
+        public int end = 100000;
+        public Form1()
+        {
+            InitializeComponent();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Navigate("http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=information%20extraction&rowsPerPage=1&searchField=Search_All");
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            url.Clear();
+            timer1.Stop();
+            timer2.Stop();
+        }
+        public void Test()
+        {
+            IEEEDBtestEntities TDB = new IEEEDBtestEntities();
+            IEdata tab = new IEdata();
+            tab.title = "title";
+            tab.abstracts = "abstract";
+            tab.keywords = "keywords";
+            TDB.IEdata.Add(tab);
+            TDB.SaveChanges();
+        }
+        private void timer1_Start(object sender, EventArgs e)
+        {
+            foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            {
+                // Console.WriteLine(ahref.InnerText);
+            }
+            if (index < url.Count)
+            {
+                Console.WriteLine(index + 1);
+                this.webBrowser1.Navigate(url[index]);
+                Extraction(this.webBrowser1.Document);
+                index++;
+            }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+            using (IEURLtestEntities1 ietest = new IEURLtestEntities1())
+            {
+                IQueryable<IEUrl> ieurl = from c in ietest.IEUrl select c;
+                int count = 0;
+                this.timer2.Start();
+                sumcount = ieurl.Count();
+                this.timer2.Start();
+                int indexiiiiii = 0;
+                foreach(var c in ieurl){
+                    if(indexiiiiii >= start && indexiiiiii < end)
+                        url.Add(c.url);
+                    indexiiiiii ++;
+                }
+            }
+        }
+        private void Extraction(HtmlDocument document)
+        {
+            IEEEDBtestEntities TDB = new IEEEDBtestEntities();
+            IEdata tab = new IEdata();
+            string abstracts = "";
+            string keywords = "";
+            string title = "";
+
+            foreach (HtmlElement div in document.GetElementsByTagName("div"))
+            {
+
+                if (div.GetAttribute("className").Equals("title"))
+                {
+                    //Console.WriteLine("title: "+div.InnerText);
+                    title = div.InnerText;
+                    Console.WriteLine("title: " + title);
+                    //tab.title = title;
+                }
+                if (div.GetAttribute("data-section").Equals("articleDetails.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("article"))
+                        {
+                            abstracts = div1.InnerText;
+                            Console.WriteLine("abstract: " + div1.InnerText);
+                            //tab.abstracts = div1.InnerText;
+                        }
+                    }
+                }
+                if (div.GetAttribute("data-section").Equals("abstractKeywords.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("section"))
+                        {
+                            Boolean isAuthorKeywords = false;
+                            foreach (HtmlElement h2 in div1.GetElementsByTagName("h2"))
+                            {
+                                if (h2.InnerText.Equals("AUTHOR KEYWORDS"))
+                                {
+                                    isAuthorKeywords = true;
+                                    break;
+                                }
+                            }
+                            if (isAuthorKeywords)
+                            {
+                                foreach (HtmlElement li in div1.GetElementsByTagName("li"))
+                                {
+                                    keywords += li.InnerText + ";";
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            tab.abstracts = abstracts;
+            tab.title = title;
+            tab.keywords = keywords;
+            TDB.IEdata.Add(tab);
+            TDB.SaveChanges();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+
+            Console.WriteLine("sum : " + sum);
+            foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            {
+                if (ahref.GetAttribute("className").Equals("ng-binding ng-scope"))
+                {
+                    string urll = urlhead + ahref.GetAttribute("href");
+                    if (!(urll.Contains("mostRecentIssue")))
+                    {
+                        IEURLtestEntitiesSECOND ieurltest = new IEURLtestEntitiesSECOND();
+                        IEUrl ieurl = new IEUrl();
+                        ieurl.url = urll;
+                        ieurltest.IEUrl.Add(ieurl);
+                        ieurltest.SaveChanges();
+                    }
+
+                }
+                if (ahref.GetAttribute("ng-click").Equals("selectPage(page + 1)"))
+                {
+                    sum--;
+                    if (sum <= 0)
+                    {
+                        this.timer1.Stop();
+                        //this.timer2.Start();
+                        Console.WriteLine(url.Count);
+                    }
+                    ahref.InvokeMember("click");
+                }
+            }
+
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            if(sumcount >= indexsum){
+                Console.WriteLine("index : " + indexsum);
+                this.webBrowser1.Navigate(url[indexsum]);
+                Extraction(this.webBrowser1.Document);
+                indexsum++;
+                
+            }
+            
+        }
+    }
+}

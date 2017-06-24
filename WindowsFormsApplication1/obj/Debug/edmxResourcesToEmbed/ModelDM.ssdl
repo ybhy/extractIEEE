@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IEReModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DMdata">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="title" Type="text" />
+    <Property Name="abstracts" Type="text" />
+    <Property Name="keywords" Type="text" />
+  </EntityType>
+  <EntityType Name="DMUrl">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityContainer Name="IEReModelStoreContainer">
+    <EntitySet Name="DMdata" EntityType="Self.DMdata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DMUrl" EntityType="Self.DMUrl" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

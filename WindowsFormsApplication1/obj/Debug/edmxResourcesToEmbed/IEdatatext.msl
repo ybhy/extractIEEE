@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IEtestModelStoreContainer" CdmEntityContainer="IEtestEntities">
+    <EntitySetMapping Name="IEdata">
+      <EntityTypeMapping TypeName="IEtestModel.IEdata">
+        <MappingFragment StoreEntitySet="IEdata">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracr" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

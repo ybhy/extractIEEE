@@ -1,0 +1,107 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public List<string> url = new List<string>();
+        public string urlhead = "http://ieeexplore.ieee.org";
+        public int index = 0;
+        public Form1()
+        {
+            InitializeComponent();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Navigate("http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=information%20extraction&pageNumber=1&rowsPerPage=100&searchField=Search_All");
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+        }
+        private void timer1_Start(object sender, EventArgs e)
+        {
+            //foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            //{
+            //    Console.WriteLine(ahref.InnerText);
+            //}
+
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+            foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            {
+                if (ahref.GetAttribute("className").Equals("ng-binding ng-scope"))
+                {
+                    string urll = urlhead + ahref.GetAttribute("href");
+                    url.Add(urll);
+                    Console.WriteLine(url);
+                    Console.WriteLine(ahref.InnerText);
+                }
+            }
+            this.timer1.Start();
+        }
+        private void Extraction(HtmlDocument document)
+        {
+            foreach (HtmlElement div in document.GetElementsByTagName("div"))
+            {
+                List<string> listtitle = new List<string>();
+                string nextpage = null;
+                this.timer1.Stop();
+                this.timer1.Start();
+                if (div.GetAttribute("data-section").Equals("articleDetails.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("article"))
+                            Console.WriteLine(div1.InnerText);
+                    }
+                }
+                if (div.GetAttribute("data-section").Equals("abstractKeywords.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("article-blk"))
+                            Console.WriteLine(div1.InnerText);
+                    }
+                }
+                foreach (HtmlElement ul in this.webBrowser1.Document.GetElementsByTagName("ul"))
+                {
+                    if (ul.GetAttribute("className").Equals("ng-binding"))
+                    {
+                        foreach (HtmlElement a in ul.GetElementsByTagName("a"))
+                        {
+                            if (a.GetAttribute("title").Equals("selectPage(page + 1)"))
+                            {
+                                nextpage = a.GetAttribute("href");
+                            }
+                        }
+                    }
+                }
+                if (nextpage != null)
+                {
+                    this.webBrowser1.Navigate(nextpage);
+                    this.timer1.Start();
+                }
+                else
+                {
+                    Application.Exit();
+                }
+            }
+        }
+    }
+}

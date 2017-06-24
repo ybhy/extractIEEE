@@ -1,0 +1,82 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
+{
+    public partial class Form1 : Form
+    {
+        public List<string> urlL = new List<string>();
+        public int index = 0;
+        public Form1()
+        {
+            InitializeComponent();
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.Navigate("http://ieeexplore.ieee.org/search/searchresult.jsp?queryText=text.annotation&rowsPerPage=75&searchField=Search_All");
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            urlL.Clear();
+            timer1.Stop();
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //this.timer1.Start();
+            foreach (HtmlElement ahref in this.webBrowser1.Document.GetElementsByTagName("A"))
+            {
+                //HtmlElement nextpage = null;
+                if (ahref.GetAttribute("className").Equals("ng-binding ng-scope"))
+                {
+                    //Console.WriteLine(ahref.InnerText);
+                    //Console.WriteLine(ahref.GetAttribute("href"));
+                    string url = "http://ieeexplore.ieee.org/" +¡¡ahref.GetAttribute("href");
+                    urlL.Insert(0, url); 
+                }
+               
+            }
+            if (urlL.Count != 0)
+                timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (index < urlL.Count)
+            {
+                Console.WriteLine(index + 1);
+                this.webBrowser1.Navigate(urlL[index]);
+                Extraction(webBrowser1.Document);
+                index++;
+            }
+        }
+
+        private void Extraction(HtmlDocument document)
+        {
+            foreach(HtmlElement div in document.GetElementsByTagName("div"))
+            {
+                if (div.GetAttribute("data-section").Equals("articleDetails.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("article")) 
+                            Console.WriteLine(div1.InnerText);
+                    }
+                    
+                }
+                if (div.GetAttribute("data-section").Equals("abstractKeywords.ajax"))
+                {
+                    foreach (HtmlElement div1 in div.GetElementsByTagName("div"))
+                    {
+                        if (div1.GetAttribute("className").Equals("article-blk"))
+                            Console.WriteLine(div1.InnerText);
+                    }
+                }
+            }
+        }
+    }
+}

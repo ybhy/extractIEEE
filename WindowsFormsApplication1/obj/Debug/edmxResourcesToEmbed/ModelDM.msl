@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IEReModelStoreContainer" CdmEntityContainer="IEDMEntities5">
+    <EntitySetMapping Name="DMdata">
+      <EntityTypeMapping TypeName="IEReModel.DMdata">
+        <MappingFragment StoreEntitySet="DMdata">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DMUrl">
+      <EntityTypeMapping TypeName="IEReModel.DMUrl">
+        <MappingFragment StoreEntitySet="DMUrl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

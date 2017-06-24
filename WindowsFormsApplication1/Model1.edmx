@@ -1,0 +1,1219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LWModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="DZelectricalsystem">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DZelectricalsystemurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="DZoptoelectronicdevice">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DZoptoelectronicdeviceurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="HXchemicalelement">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXchemicalelementurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="HXfinechemicals">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXfinechemicalsurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="HXmoleculardesign">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXmoleculardesignurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="HXorganicsynthesis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXorganicsynthesisurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ITartificialintelligence">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITartificialintelligenceurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ITmachinelearning">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITmachinelearningurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="ITparallelcomputing">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITparallelcomputingurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SXcombinatorialmathematics">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXcombinatorialmathematicsurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SXfunctionalanalysis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXfunctionalanalysisurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SXfunctiontheory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXfunctiontheoryurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="SXordinarydifferential">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXordinarydifferentialurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TXintegratedcircuit">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXintegratedcircuiturl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TXmobilecommunication">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXmobilecommunicationurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TXopticalfiber">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXopticalfiberurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="TXsignalprocessing">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="title" Type="varchar" MaxLength="500" />
+          <Property Name="abstracts" Type="varchar" MaxLength="5000" />
+          <Property Name="keywords" Type="varchar" MaxLength="1000" />
+          <Property Name="inspec" Type="varchar" MaxLength="1000" />
+          <Property Name="inspecnot" Type="varchar" MaxLength="1000" />
+          <Property Name="ieeeterms" Type="varchar" MaxLength="1000" />
+          <Property Name="label" Type="nchar" MaxLength="30" Nullable="false" />
+          <Property Name="search" Type="nchar" MaxLength="30" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXsignalprocessingurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="url" Type="varchar" MaxLength="200" />
+        </EntityType>
+        <EntityContainer Name="LWModelStoreContainer">
+          <EntitySet Name="DZelectricalsystem" EntityType="Self.DZelectricalsystem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DZelectricalsystemurl" EntityType="Self.DZelectricalsystemurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DZoptoelectronicdevice" EntityType="Self.DZoptoelectronicdevice" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DZoptoelectronicdeviceurl" EntityType="Self.DZoptoelectronicdeviceurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXchemicalelement" EntityType="Self.HXchemicalelement" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXchemicalelementurl" EntityType="Self.HXchemicalelementurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXfinechemicals" EntityType="Self.HXfinechemicals" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXfinechemicalsurl" EntityType="Self.HXfinechemicalsurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXmoleculardesign" EntityType="Self.HXmoleculardesign" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXmoleculardesignurl" EntityType="Self.HXmoleculardesignurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXorganicsynthesis" EntityType="Self.HXorganicsynthesis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="HXorganicsynthesisurl" EntityType="Self.HXorganicsynthesisurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITartificialintelligence" EntityType="Self.ITartificialintelligence" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITartificialintelligenceurl" EntityType="Self.ITartificialintelligenceurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITmachinelearning" EntityType="Self.ITmachinelearning" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITmachinelearningurl" EntityType="Self.ITmachinelearningurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITparallelcomputing" EntityType="Self.ITparallelcomputing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ITparallelcomputingurl" EntityType="Self.ITparallelcomputingurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXcombinatorialmathematics" EntityType="Self.SXcombinatorialmathematics" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXcombinatorialmathematicsurl" EntityType="Self.SXcombinatorialmathematicsurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXfunctionalanalysis" EntityType="Self.SXfunctionalanalysis" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXfunctionalanalysisurl" EntityType="Self.SXfunctionalanalysisurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXfunctiontheory" EntityType="Self.SXfunctiontheory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXfunctiontheoryurl" EntityType="Self.SXfunctiontheoryurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXordinarydifferential" EntityType="Self.SXordinarydifferential" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SXordinarydifferentialurl" EntityType="Self.SXordinarydifferentialurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXintegratedcircuit" EntityType="Self.TXintegratedcircuit" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXintegratedcircuiturl" EntityType="Self.TXintegratedcircuiturl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXmobilecommunication" EntityType="Self.TXmobilecommunication" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXmobilecommunicationurl" EntityType="Self.TXmobilecommunicationurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXopticalfiber" EntityType="Self.TXopticalfiber" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXopticalfiberurl" EntityType="Self.TXopticalfiberurl" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXsignalprocessing" EntityType="Self.TXsignalprocessing" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TXsignalprocessingurl" EntityType="Self.TXsignalprocessingurl" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LWModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="DZelectricalsystem">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DZelectricalsystemurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="DZoptoelectronicdevice">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DZoptoelectronicdeviceurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HXchemicalelement">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXchemicalelementurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HXfinechemicals">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXfinechemicalsurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HXmoleculardesign">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXmoleculardesignurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HXorganicsynthesis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HXorganicsynthesisurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ITartificialintelligence">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITartificialintelligenceurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ITmachinelearning">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITmachinelearningurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="ITparallelcomputing">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ITparallelcomputingurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SXcombinatorialmathematics">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXcombinatorialmathematicsurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SXfunctionalanalysis">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXfunctionalanalysisurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SXfunctiontheory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXfunctiontheoryurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="SXordinarydifferential">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SXordinarydifferentialurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TXintegratedcircuit">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXintegratedcircuiturl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TXmobilecommunication">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXmobilecommunicationurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TXopticalfiber">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXopticalfiberurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="TXsignalprocessing">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="title" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Name="abstracts" Type="String" MaxLength="5000" FixedLength="false" Unicode="false" />
+          <Property Name="keywords" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspec" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="inspecnot" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="ieeeterms" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="label" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="search" Type="String" MaxLength="30" FixedLength="true" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TXsignalprocessingurl">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="url" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="LWEntities7" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="DZelectricalsystem" EntityType="Self.DZelectricalsystem" />
+          <EntitySet Name="DZelectricalsystemurl" EntityType="Self.DZelectricalsystemurl" />
+          <EntitySet Name="DZoptoelectronicdevice" EntityType="Self.DZoptoelectronicdevice" />
+          <EntitySet Name="DZoptoelectronicdeviceurl" EntityType="Self.DZoptoelectronicdeviceurl" />
+          <EntitySet Name="HXchemicalelement" EntityType="Self.HXchemicalelement" />
+          <EntitySet Name="HXchemicalelementurl" EntityType="Self.HXchemicalelementurl" />
+          <EntitySet Name="HXfinechemicals" EntityType="Self.HXfinechemicals" />
+          <EntitySet Name="HXfinechemicalsurl" EntityType="Self.HXfinechemicalsurl" />
+          <EntitySet Name="HXmoleculardesign" EntityType="Self.HXmoleculardesign" />
+          <EntitySet Name="HXmoleculardesignurl" EntityType="Self.HXmoleculardesignurl" />
+          <EntitySet Name="HXorganicsynthesis" EntityType="Self.HXorganicsynthesis" />
+          <EntitySet Name="HXorganicsynthesisurl" EntityType="Self.HXorganicsynthesisurl" />
+          <EntitySet Name="ITartificialintelligence" EntityType="Self.ITartificialintelligence" />
+          <EntitySet Name="ITartificialintelligenceurl" EntityType="Self.ITartificialintelligenceurl" />
+          <EntitySet Name="ITmachinelearning" EntityType="Self.ITmachinelearning" />
+          <EntitySet Name="ITmachinelearningurl" EntityType="Self.ITmachinelearningurl" />
+          <EntitySet Name="ITparallelcomputing" EntityType="Self.ITparallelcomputing" />
+          <EntitySet Name="ITparallelcomputingurl" EntityType="Self.ITparallelcomputingurl" />
+          <EntitySet Name="SXcombinatorialmathematics" EntityType="Self.SXcombinatorialmathematics" />
+          <EntitySet Name="SXcombinatorialmathematicsurl" EntityType="Self.SXcombinatorialmathematicsurl" />
+          <EntitySet Name="SXfunctionalanalysis" EntityType="Self.SXfunctionalanalysis" />
+          <EntitySet Name="SXfunctionalanalysisurl" EntityType="Self.SXfunctionalanalysisurl" />
+          <EntitySet Name="SXfunctiontheory" EntityType="Self.SXfunctiontheory" />
+          <EntitySet Name="SXfunctiontheoryurl" EntityType="Self.SXfunctiontheoryurl" />
+          <EntitySet Name="SXordinarydifferential" EntityType="Self.SXordinarydifferential" />
+          <EntitySet Name="SXordinarydifferentialurl" EntityType="Self.SXordinarydifferentialurl" />
+          <EntitySet Name="TXintegratedcircuit" EntityType="Self.TXintegratedcircuit" />
+          <EntitySet Name="TXintegratedcircuiturl" EntityType="Self.TXintegratedcircuiturl" />
+          <EntitySet Name="TXmobilecommunication" EntityType="Self.TXmobilecommunication" />
+          <EntitySet Name="TXmobilecommunicationurl" EntityType="Self.TXmobilecommunicationurl" />
+          <EntitySet Name="TXopticalfiber" EntityType="Self.TXopticalfiber" />
+          <EntitySet Name="TXopticalfiberurl" EntityType="Self.TXopticalfiberurl" />
+          <EntitySet Name="TXsignalprocessing" EntityType="Self.TXsignalprocessing" />
+          <EntitySet Name="TXsignalprocessingurl" EntityType="Self.TXsignalprocessingurl" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LWModelStoreContainer" CdmEntityContainer="LWEntities7">
+          <EntitySetMapping Name="DZelectricalsystem">
+            <EntityTypeMapping TypeName="LWModel.DZelectricalsystem">
+              <MappingFragment StoreEntitySet="DZelectricalsystem">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DZelectricalsystemurl">
+            <EntityTypeMapping TypeName="LWModel.DZelectricalsystemurl">
+              <MappingFragment StoreEntitySet="DZelectricalsystemurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DZoptoelectronicdevice">
+            <EntityTypeMapping TypeName="LWModel.DZoptoelectronicdevice">
+              <MappingFragment StoreEntitySet="DZoptoelectronicdevice">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DZoptoelectronicdeviceurl">
+            <EntityTypeMapping TypeName="LWModel.DZoptoelectronicdeviceurl">
+              <MappingFragment StoreEntitySet="DZoptoelectronicdeviceurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXchemicalelement">
+            <EntityTypeMapping TypeName="LWModel.HXchemicalelement">
+              <MappingFragment StoreEntitySet="HXchemicalelement">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXchemicalelementurl">
+            <EntityTypeMapping TypeName="LWModel.HXchemicalelementurl">
+              <MappingFragment StoreEntitySet="HXchemicalelementurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXfinechemicals">
+            <EntityTypeMapping TypeName="LWModel.HXfinechemicals">
+              <MappingFragment StoreEntitySet="HXfinechemicals">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXfinechemicalsurl">
+            <EntityTypeMapping TypeName="LWModel.HXfinechemicalsurl">
+              <MappingFragment StoreEntitySet="HXfinechemicalsurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXmoleculardesign">
+            <EntityTypeMapping TypeName="LWModel.HXmoleculardesign">
+              <MappingFragment StoreEntitySet="HXmoleculardesign">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXmoleculardesignurl">
+            <EntityTypeMapping TypeName="LWModel.HXmoleculardesignurl">
+              <MappingFragment StoreEntitySet="HXmoleculardesignurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXorganicsynthesis">
+            <EntityTypeMapping TypeName="LWModel.HXorganicsynthesis">
+              <MappingFragment StoreEntitySet="HXorganicsynthesis">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HXorganicsynthesisurl">
+            <EntityTypeMapping TypeName="LWModel.HXorganicsynthesisurl">
+              <MappingFragment StoreEntitySet="HXorganicsynthesisurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITartificialintelligence">
+            <EntityTypeMapping TypeName="LWModel.ITartificialintelligence">
+              <MappingFragment StoreEntitySet="ITartificialintelligence">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITartificialintelligenceurl">
+            <EntityTypeMapping TypeName="LWModel.ITartificialintelligenceurl">
+              <MappingFragment StoreEntitySet="ITartificialintelligenceurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITmachinelearning">
+            <EntityTypeMapping TypeName="LWModel.ITmachinelearning">
+              <MappingFragment StoreEntitySet="ITmachinelearning">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITmachinelearningurl">
+            <EntityTypeMapping TypeName="LWModel.ITmachinelearningurl">
+              <MappingFragment StoreEntitySet="ITmachinelearningurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITparallelcomputing">
+            <EntityTypeMapping TypeName="LWModel.ITparallelcomputing">
+              <MappingFragment StoreEntitySet="ITparallelcomputing">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ITparallelcomputingurl">
+            <EntityTypeMapping TypeName="LWModel.ITparallelcomputingurl">
+              <MappingFragment StoreEntitySet="ITparallelcomputingurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXcombinatorialmathematics">
+            <EntityTypeMapping TypeName="LWModel.SXcombinatorialmathematics">
+              <MappingFragment StoreEntitySet="SXcombinatorialmathematics">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXcombinatorialmathematicsurl">
+            <EntityTypeMapping TypeName="LWModel.SXcombinatorialmathematicsurl">
+              <MappingFragment StoreEntitySet="SXcombinatorialmathematicsurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXfunctionalanalysis">
+            <EntityTypeMapping TypeName="LWModel.SXfunctionalanalysis">
+              <MappingFragment StoreEntitySet="SXfunctionalanalysis">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXfunctionalanalysisurl">
+            <EntityTypeMapping TypeName="LWModel.SXfunctionalanalysisurl">
+              <MappingFragment StoreEntitySet="SXfunctionalanalysisurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXfunctiontheory">
+            <EntityTypeMapping TypeName="LWModel.SXfunctiontheory">
+              <MappingFragment StoreEntitySet="SXfunctiontheory">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXfunctiontheoryurl">
+            <EntityTypeMapping TypeName="LWModel.SXfunctiontheoryurl">
+              <MappingFragment StoreEntitySet="SXfunctiontheoryurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXordinarydifferential">
+            <EntityTypeMapping TypeName="LWModel.SXordinarydifferential">
+              <MappingFragment StoreEntitySet="SXordinarydifferential">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SXordinarydifferentialurl">
+            <EntityTypeMapping TypeName="LWModel.SXordinarydifferentialurl">
+              <MappingFragment StoreEntitySet="SXordinarydifferentialurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXintegratedcircuit">
+            <EntityTypeMapping TypeName="LWModel.TXintegratedcircuit">
+              <MappingFragment StoreEntitySet="TXintegratedcircuit">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXintegratedcircuiturl">
+            <EntityTypeMapping TypeName="LWModel.TXintegratedcircuiturl">
+              <MappingFragment StoreEntitySet="TXintegratedcircuiturl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXmobilecommunication">
+            <EntityTypeMapping TypeName="LWModel.TXmobilecommunication">
+              <MappingFragment StoreEntitySet="TXmobilecommunication">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXmobilecommunicationurl">
+            <EntityTypeMapping TypeName="LWModel.TXmobilecommunicationurl">
+              <MappingFragment StoreEntitySet="TXmobilecommunicationurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXopticalfiber">
+            <EntityTypeMapping TypeName="LWModel.TXopticalfiber">
+              <MappingFragment StoreEntitySet="TXopticalfiber">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXopticalfiberurl">
+            <EntityTypeMapping TypeName="LWModel.TXopticalfiberurl">
+              <MappingFragment StoreEntitySet="TXopticalfiberurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXsignalprocessing">
+            <EntityTypeMapping TypeName="LWModel.TXsignalprocessing">
+              <MappingFragment StoreEntitySet="TXsignalprocessing">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="title" ColumnName="title" />
+                <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+                <ScalarProperty Name="keywords" ColumnName="keywords" />
+                <ScalarProperty Name="inspec" ColumnName="inspec" />
+                <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+                <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+                <ScalarProperty Name="label" ColumnName="label" />
+                <ScalarProperty Name="search" ColumnName="search" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TXsignalprocessingurl">
+            <EntityTypeMapping TypeName="LWModel.TXsignalprocessingurl">
+              <MappingFragment StoreEntitySet="TXsignalprocessingurl">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="url" ColumnName="url" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

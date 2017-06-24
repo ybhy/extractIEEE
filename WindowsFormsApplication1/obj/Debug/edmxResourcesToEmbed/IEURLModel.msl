@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IEURLtestModelStoreContainer" CdmEntityContainer="IEtestEntities1">
+    <EntitySetMapping Name="IEUrl">
+      <EntityTypeMapping TypeName="IEURLtestModel.IEUrl">
+        <MappingFragment StoreEntitySet="IEUrl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

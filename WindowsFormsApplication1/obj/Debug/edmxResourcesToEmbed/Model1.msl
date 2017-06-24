@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="LWModelStoreContainer" CdmEntityContainer="LWEntities7">
+    <EntitySetMapping Name="DZelectricalsystem">
+      <EntityTypeMapping TypeName="LWModel.DZelectricalsystem">
+        <MappingFragment StoreEntitySet="DZelectricalsystem">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DZelectricalsystemurl">
+      <EntityTypeMapping TypeName="LWModel.DZelectricalsystemurl">
+        <MappingFragment StoreEntitySet="DZelectricalsystemurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DZoptoelectronicdevice">
+      <EntityTypeMapping TypeName="LWModel.DZoptoelectronicdevice">
+        <MappingFragment StoreEntitySet="DZoptoelectronicdevice">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DZoptoelectronicdeviceurl">
+      <EntityTypeMapping TypeName="LWModel.DZoptoelectronicdeviceurl">
+        <MappingFragment StoreEntitySet="DZoptoelectronicdeviceurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXchemicalelement">
+      <EntityTypeMapping TypeName="LWModel.HXchemicalelement">
+        <MappingFragment StoreEntitySet="HXchemicalelement">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXchemicalelementurl">
+      <EntityTypeMapping TypeName="LWModel.HXchemicalelementurl">
+        <MappingFragment StoreEntitySet="HXchemicalelementurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXfinechemicals">
+      <EntityTypeMapping TypeName="LWModel.HXfinechemicals">
+        <MappingFragment StoreEntitySet="HXfinechemicals">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXfinechemicalsurl">
+      <EntityTypeMapping TypeName="LWModel.HXfinechemicalsurl">
+        <MappingFragment StoreEntitySet="HXfinechemicalsurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXmoleculardesign">
+      <EntityTypeMapping TypeName="LWModel.HXmoleculardesign">
+        <MappingFragment StoreEntitySet="HXmoleculardesign">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXmoleculardesignurl">
+      <EntityTypeMapping TypeName="LWModel.HXmoleculardesignurl">
+        <MappingFragment StoreEntitySet="HXmoleculardesignurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXorganicsynthesis">
+      <EntityTypeMapping TypeName="LWModel.HXorganicsynthesis">
+        <MappingFragment StoreEntitySet="HXorganicsynthesis">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HXorganicsynthesisurl">
+      <EntityTypeMapping TypeName="LWModel.HXorganicsynthesisurl">
+        <MappingFragment StoreEntitySet="HXorganicsynthesisurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITartificialintelligence">
+      <EntityTypeMapping TypeName="LWModel.ITartificialintelligence">
+        <MappingFragment StoreEntitySet="ITartificialintelligence">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITartificialintelligenceurl">
+      <EntityTypeMapping TypeName="LWModel.ITartificialintelligenceurl">
+        <MappingFragment StoreEntitySet="ITartificialintelligenceurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITmachinelearning">
+      <EntityTypeMapping TypeName="LWModel.ITmachinelearning">
+        <MappingFragment StoreEntitySet="ITmachinelearning">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITmachinelearningurl">
+      <EntityTypeMapping TypeName="LWModel.ITmachinelearningurl">
+        <MappingFragment StoreEntitySet="ITmachinelearningurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITparallelcomputing">
+      <EntityTypeMapping TypeName="LWModel.ITparallelcomputing">
+        <MappingFragment StoreEntitySet="ITparallelcomputing">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ITparallelcomputingurl">
+      <EntityTypeMapping TypeName="LWModel.ITparallelcomputingurl">
+        <MappingFragment StoreEntitySet="ITparallelcomputingurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXcombinatorialmathematics">
+      <EntityTypeMapping TypeName="LWModel.SXcombinatorialmathematics">
+        <MappingFragment StoreEntitySet="SXcombinatorialmathematics">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXcombinatorialmathematicsurl">
+      <EntityTypeMapping TypeName="LWModel.SXcombinatorialmathematicsurl">
+        <MappingFragment StoreEntitySet="SXcombinatorialmathematicsurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXfunctionalanalysis">
+      <EntityTypeMapping TypeName="LWModel.SXfunctionalanalysis">
+        <MappingFragment StoreEntitySet="SXfunctionalanalysis">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXfunctionalanalysisurl">
+      <EntityTypeMapping TypeName="LWModel.SXfunctionalanalysisurl">
+        <MappingFragment StoreEntitySet="SXfunctionalanalysisurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXfunctiontheory">
+      <EntityTypeMapping TypeName="LWModel.SXfunctiontheory">
+        <MappingFragment StoreEntitySet="SXfunctiontheory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXfunctiontheoryurl">
+      <EntityTypeMapping TypeName="LWModel.SXfunctiontheoryurl">
+        <MappingFragment StoreEntitySet="SXfunctiontheoryurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXordinarydifferential">
+      <EntityTypeMapping TypeName="LWModel.SXordinarydifferential">
+        <MappingFragment StoreEntitySet="SXordinarydifferential">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SXordinarydifferentialurl">
+      <EntityTypeMapping TypeName="LWModel.SXordinarydifferentialurl">
+        <MappingFragment StoreEntitySet="SXordinarydifferentialurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXintegratedcircuit">
+      <EntityTypeMapping TypeName="LWModel.TXintegratedcircuit">
+        <MappingFragment StoreEntitySet="TXintegratedcircuit">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXintegratedcircuiturl">
+      <EntityTypeMapping TypeName="LWModel.TXintegratedcircuiturl">
+        <MappingFragment StoreEntitySet="TXintegratedcircuiturl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXmobilecommunication">
+      <EntityTypeMapping TypeName="LWModel.TXmobilecommunication">
+        <MappingFragment StoreEntitySet="TXmobilecommunication">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXmobilecommunicationurl">
+      <EntityTypeMapping TypeName="LWModel.TXmobilecommunicationurl">
+        <MappingFragment StoreEntitySet="TXmobilecommunicationurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXopticalfiber">
+      <EntityTypeMapping TypeName="LWModel.TXopticalfiber">
+        <MappingFragment StoreEntitySet="TXopticalfiber">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXopticalfiberurl">
+      <EntityTypeMapping TypeName="LWModel.TXopticalfiberurl">
+        <MappingFragment StoreEntitySet="TXopticalfiberurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXsignalprocessing">
+      <EntityTypeMapping TypeName="LWModel.TXsignalprocessing">
+        <MappingFragment StoreEntitySet="TXsignalprocessing">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="abstracts" ColumnName="abstracts" />
+          <ScalarProperty Name="keywords" ColumnName="keywords" />
+          <ScalarProperty Name="inspec" ColumnName="inspec" />
+          <ScalarProperty Name="inspecnot" ColumnName="inspecnot" />
+          <ScalarProperty Name="ieeeterms" ColumnName="ieeeterms" />
+          <ScalarProperty Name="label" ColumnName="label" />
+          <ScalarProperty Name="search" ColumnName="search" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TXsignalprocessingurl">
+      <EntityTypeMapping TypeName="LWModel.TXsignalprocessingurl">
+        <MappingFragment StoreEntitySet="TXsignalprocessingurl">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="url" ColumnName="url" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
